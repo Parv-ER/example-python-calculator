@@ -1,4 +1,4 @@
-name:Run Calculator
+name: Run Calculator
 on:
   push:
     branches: [main]
