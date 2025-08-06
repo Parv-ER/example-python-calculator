@@ -8,15 +8,15 @@ on:
 jobs:
   run-calculator:
     runs-on: ubuntu-latest
-    
-    steps:
-      -name: Get the code
-      uses: actions/checkout@v4
-  
-      -name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
 
-      -name: Run calculator
-      run: python calculator.py
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run calculator
+        run: python calculator.py
